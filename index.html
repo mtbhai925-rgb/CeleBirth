@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Chachu!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Balloons -->
+  <div class="balloons" aria-hidden="true">
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <div class="balloon b5"></div>
+    <div class="balloon b6"></div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-label">A Very Special Day</p>
+      <h1 class="hero-title">
+        Happy<br/>
+        <em>Birthday</em><br/>
+        <span class="uncle-name">Ahsan Chachu!</span>
+      </h1>
+      <p class="hero-sub">Wishing you joy, laughter, and all the love in the world 🎉</p>
+      <a href="#message" class="btn-scroll">See Your Surprise ↓</a>
+    </div>
+    <div class="hero-cake" aria-hidden="true">
+      <div class="candles">
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+      </div>
+      <div class="cake-layer layer3"></div>
+      <div class="cake-layer layer2"></div>
+      <div class="cake-layer layer1"></div>
+    </div>
+  </section>
+
+  <!-- ===== MESSAGE SECTION ===== -->
+  <section class="message-section" id="message">
+    <div class="section-inner">
+      <div class="quote-mark">"</div>
+      <h2 class="message-title">A Note From the Heart</h2>
+      <p class="message-body">
+        Dear Chachu, today is all about celebrating you — the person who always had time
+        for a story, a laugh, and the best advice. You make every room brighter just by being in it.
+        On this special day, we want you to know how deeply you are loved and cherished.
+        May every wish you've kept close to your heart come true this year!
+      </p>
+      <div class="message-signature">With all our love ❤️</div>
+    </div>
+  </section>
+
+  <!-- ===== PHOTOS SECTION ===== -->
+  <section class="photos-section" id="photos">
+    <div class="photos-header">
+      <span class="section-tag">Memories</span>
+      <h2 class="photos-title">Our Favourite Moments</h2>
+      <p class="photos-sub"></p>
+    </div>
+
+    <div class="photos-grid">
+
+      <div class="photo-card card-large">
+        <div class="photo-wrap">
+          <img src="images/03.jpg" alt="Memory 1" />
+          <div class="photo-overlay"><span>A Golden Memory</span></div>
+        </div>
+      </div>
+
+      <div class="photo-card card-tall">
+        <div class="photo-wrap">
+          <img src="images/04.jpg" alt="Memory 2" />
+          <div class="photo-overlay"><span>Timeless Smiles</span></div>
+        </div>
+      </div>
+
+      <div class="photo-card card-wide">
+        <div class="photo-wrap">
+          <img src="images/02.jpg" alt="Memory 3" />
+          <div class="photo-overlay"><span>Together Always</span></div>
+        </div>
+      </div>
+
+      <div class="photo-card card-square">
+        <div class="photo-wrap">
+          <img src="images/01.jpg" alt="Memory 4" />
+          <div class="photo-overlay"><span>Joy & Laughter</span></div>
+        </div>
+      </div>
+
+      <div class="photo-card card-square">
+        <div class="photo-wrap">
+          <img src="images/05.jpg" alt="Memory 5" />
+          <div class="photo-overlay"><span>Family Love</span></div>
+        </div>
+      </div>
+
+      <div class="photo-card card-tall">
+        <div class="photo-wrap">
+          <img src="images/06.jpg" alt="Memory 6" />
+          <div class="photo-overlay"><span>Sweet Moments</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WISHES SECTION ===== -->
+  <section class="wishes-section" id="wishes">
+    <h2 class="wishes-title">Birthday Wishes</h2>
+    <div class="wishes-grid">
+      <div class="wish-card">
+        <div class="wish-icon">🌟</div>
+        <h3>Health & Happiness</h3>
+        <p>May you always be blessed with the best of health and a heart full of happiness every single day.</p>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🌸</div>
+        <h3>Peace & Prosperity</h3>
+        <p>Wishing you a year filled with calm moments, beautiful blessings, and wonderful prosperity.</p>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🎯</div>
+        <h3>Dreams Come True</h3>
+        <p>May all the goals you've set your sights on be achieved this year and beyond.</p>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🤝</div>
+        <h3>Love & Togetherness</h3>
+        <p>Here's to more family gatherings, shared meals, and memories we'll treasure forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-stars" aria-hidden="true">
+      <span>✦</span><span>✦</span><span>✦</span>
+    </div>
+    <p class="footer-text">Made with love, just for you, Ahsan Chachu</p>
+    <p class="footer-year">© <span id="year"></span> — Muhammad Mueez </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
